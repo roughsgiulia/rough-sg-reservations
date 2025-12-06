@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rough Santa Giulia – Prenotazioni</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Rough Santa Giulia</h1>
+
+    <button id="lang-toggle">EN</button>
+  </header>
+
+  <section id="event-banner" class="hidden"></section>
+
+  <form id="reservation-form">
+    <label>
+      <span class="label" id="label-date">Data</span>
+      <input type="date" id="res_date" required />
+    </label>
+
+    <label>
+      <span class="label" id="label-time">Orario di arrivo</span>
+      <select id="res_time" required></select>
+    </label>
+
+    <label>
+      <span class="label" id="label-area">Area</span>
+      <select id="area" required>
+        <option value="indoor">Interno</option>
+        <option value="outdoor">Dehor</option>
+      </select>
+    </label>
+
+    <label>
+      <span class="label" id="label-people">Persone</span>
+      <input type="number" id="people" min="1" max="10" required />
+    </label>
+
+    <label>
+      <span class="label" id="label-name">Nome</span>
+      <input type="text" id="name" required />
+    </label>
+
+    <label>
+      <span class="label" id="label-phone">Telefono</span>
+      <input type="text" id="phone" required />
+    </label>
+
+    <label>
+      <span class="label" id="label-notes">Note (opzionale)</span>
+      <textarea id="notes"></textarea>
+    </label>
+
+    <!-- Honeypot anti-spam -->
+    <input type="text" id="website" name="website" style="display:none">
+
+    <button type="submit" id="submit-btn">Prenota</button>
+  </form>
+
+  <div id="special-cta" class="hidden">
+    <p id="cta-text-it">
+      Per tavoli oltre 10 persone o occasioni speciali,<br>
+      contattaci per un preventivo privato:
+    </p>
+    <p id="cta-text-en" class="hidden">
+      For tables over 10 people or special occasions,<br>
+      contact us for a private quotation:
+    </p>
+
+    <a id="cta-whatsapp" class="cta-button" target="_blank">WhatsApp</a>
+    <a id="cta-instagram" class="cta-button" target="_blank">Instagram</a>
+  </div>
+
+  <div id="feedback" class="hidden"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
