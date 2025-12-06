@@ -1,0 +1,101 @@
+body {
+  background: #0B0E10;
+  color: #F4F1EA;
+  font-family: sans-serif;
+  padding: 20px;
+  max-width: 500px;
+  margin: auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+h1 {
+  font-size: 26px;
+  color: #D72638;
+  margin: 0;
+}
+
+#lang-toggle {
+  background: none;
+  color: #F4F1EA;
+  border: 1px solid #F4F1EA;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+form label {
+  display: block;
+  margin-bottom: 16px;
+}
+
+.label {
+  display: block;
+  margin-bottom: 4px;
+  color: #B8BDC4;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #333;
+  background: #111;
+  color: white;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  background: #D72638;
+  border: none;
+  border-radius: 6px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+#event-banner {
+  background: #D72638;
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#special-cta {
+  margin-top: 25px;
+  padding: 15px;
+  background: #111;
+  border: 1px solid #333;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.cta-button {
+  display: inline-block;
+  margin: 6px;
+  padding: 10px 14px;
+  background: #D72638;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+#feedback {
+  margin-top: 20px;
+  padding: 12px;
+  border-radius: 6px;
+  background: #1e1e1e;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
